@@ -1,0 +1,12 @@
+
+https://github.com/superfly/flyctl/releases
+
+flyctl auth login
+
+flyctl launch
+
+flyctl deploy
+
+
+
+flyctl auth logout
