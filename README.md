@@ -194,7 +194,7 @@ addEventListener(
             host = Day4
         } else if (day === 5){
             host = Day5
-		} else if (day === 6){
+	} else if (day === 6){
             host = Day6
         } else if (day === 7){
             host = Day7
@@ -204,7 +204,7 @@ addEventListener(
             host = Day9
         } else if (day === 10){
             host = Day0
-		} else if (day === 11){
+	} else if (day === 11){
             host = Day1
         } else if (day === 12){
             host = Day2
@@ -214,7 +214,7 @@ addEventListener(
             host = Day4
         } else if (day === 15){
             host = Day5
-		} else if (day === 16){
+	} else if (day === 16){
             host = Day6
         } else if (day === 17){
             host = Day7
@@ -224,7 +224,7 @@ addEventListener(
             host = Day9
         } else if (day === 20){
             host = Day0
-		} else if (day === 21){
+	} else if (day === 21){
             host = Day1
         } else if (day === 22){
             host = Day2
@@ -234,7 +234,7 @@ addEventListener(
             host = Day4
         } else if (day === 25){
             host = Day5
-		} else if (day === 26){
+	} else if (day === 26){
             host = Day6
         } else if (day === 27){
             host = Day7
@@ -244,7 +244,7 @@ addEventListener(
             host = Day9
         } else if (day === 30){
             host = Day0
-		} else {
+	} else {
             host = Day1
         }
         
