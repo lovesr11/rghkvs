@@ -163,6 +163,102 @@ addEventListener(
 ```
 </details>
 
+<details>
+<summary>CloudFlare Workers一月轮换反代代码</summary>
+
+```js
+const Day0 = 'app0.herokuapp.com'
+const Day1 = 'app1.herokuapp.com'
+const Day2 = 'app2.herokuapp.com'
+const Day3 = 'app3.herokuapp.com'
+const Day4 = 'app4.herokuapp.com'
+const Day5 = 'app5.herokuapp.com'
+const Day6 = 'app6.herokuapp.com'
+const Day7 = 'app7.herokuapp.com'
+const Day8 = 'app8.herokuapp.com'
+const Day9 = 'app9.herokuapp.com'
+addEventListener(
+    "fetch",event => {
+    
+        let nd = new Date();
+        let day = nd.getDate();
+        if (day === 0) {
+            host = Day0
+        } else if (day === 1){
+            host = Day1
+        } else if (day === 2){
+            host = Day2
+        } else if (day === 3){
+            host = Day3
+        } else if (day === 4){
+            host = Day4
+        } else if (day === 5){
+            host = Day5
+		} else if (day === 6){
+            host = Day6
+        } else if (day === 7){
+            host = Day7
+        } else if (day === 8){
+            host = Day8
+        } else if (day === 9){
+            host = Day9
+        } else if (day === 10){
+            host = Day0
+		} else if (day === 11){
+            host = Day1
+        } else if (day === 12){
+            host = Day2
+        } else if (day === 13){
+            host = Day3
+        } else if (day === 14){
+            host = Day4
+        } else if (day === 15){
+            host = Day5
+		} else if (day === 16){
+            host = Day6
+        } else if (day === 17){
+            host = Day7
+        } else if (day === 18){
+            host = Day8
+        } else if (day === 19){
+            host = Day9
+        } else if (day === 20){
+            host = Day0
+		} else if (day === 21){
+            host = Day1
+        } else if (day === 22){
+            host = Day2
+        } else if (day === 23){
+            host = Day3
+        } else if (day === 24){
+            host = Day4
+        } else if (day === 25){
+            host = Day5
+		} else if (day === 26){
+            host = Day6
+        } else if (day === 27){
+            host = Day7
+        } else if (day === 28){
+            host = Day8
+        } else if (day === 29){
+            host = Day9
+        } else if (day === 30){
+            host = Day0
+		} else {
+            host = Day1
+        }
+        
+        let url=new URL(event.request.url);
+        url.hostname=host;
+        let request=new Request(url,event.request);
+        event. respondWith(
+            fetch(request)
+        )
+    }
+)
+```
+</details>
+
 ### 客户端配置
 
 ```
