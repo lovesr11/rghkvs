@@ -7,6 +7,11 @@ flyctl launch
 
 flyctl deploy
 
-
-
 flyctl auth logout
+
+
+v1:
+internal_port = 8080
+
+v2:
+internal_port = 80
