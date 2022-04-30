@@ -1,0 +1,11 @@
+DB_TYPE - postgres
+DB_HOST - tiny.db.elephantsql.com
+DB_PORT - 5432
+DB_USER - gskjxefx
+DB_PASS - RG1mjz_fZFzZW6Hvpne73IWZ_2w0htNx
+DB_NAME - gskjxefx
+DB_SLL_MODE - require
+DB_TABLE_PREFIX - alist_
+CACHE_EXPIRATION - 60
+CLEANUP_INTERVAL - 120
+ASSETS - https://npm.elemecdn.com/alist-web@$version/dist/
