@@ -8,4 +8,4 @@ DB_SLL_MODE - require
 DB_TABLE_PREFIX - alist_
 CACHE_EXPIRATION - 60
 CLEANUP_INTERVAL - 120
-ASSETS - https://npm.elemecdn.com/alist-web@$version/dist/
+ASSETS - local
